@@ -5,9 +5,10 @@ Practical part of the GoLang OTUS courses:
 - https://rutracker.org/forum/viewtopic.php?t=5863412
 
 #### hw01 Start
-- Hello now()
-- Завести Go репозиторий на GitHub, написать программу печатающую текущее время / точное время с использованием библиотеки NTP.
-- Программа должна корректно обрабатывать ошибки библиотеки: распечатывать их в STDERR и возвращать ненулевой код выхода.
+- Задание:
+- - Hello now()
+- - Завести Go репозиторий на GitHub, написать программу печатающую текущее время / точное время с использованием библиотеки NTP.
+- - Программа должна корректно обрабатывать ошибки библиотеки: распечатывать их в STDERR и возвращать ненулевой код выхода.
 - On Win: ```"c:\Program Files\Git\bin\bash.exe"```
 - Then ```GOPATH=`pwd`/gopath; go get; go get -t; go test -v hw01_test.go hw01.go``` 'main' function removed to keep files in one dir
 
@@ -42,3 +43,15 @@ Practical part of the GoLang OTUS courses:
 - - ValidString(s string) bool - check is string valid
 - ```https://golang.org/pkg/``` - internal modules
 - ```http://golang-book.ru/``` - Golang book in russian
+- Задание:
+- - Распаковка строки
+- - Создать Go функцию, осуществляющую примитивную распаковку строки, содержащую повторяющиеся символы / руны, например:
+- - 
+- - * "a4bc2d5e" => "aaaabccddddde"
+- - * "abcd" => "abcd"
+- - * "45" => "" (некорректная строка)
+- - 
+- - Дополнительное задание: поддержка escape - последовательности
+- - * `qwe\4\5` => `qwe45` (*)
+- - * `qwe\45` => `qwe44444` (*)
+- - * `qwe\\5` => `qwe\\\\\` (*)
