@@ -8,6 +8,5 @@ Practical part of the GoLang OTUS courses:
 - Hello now()
 - Завести Go репозиторий на GitHub, написать программу печатающую текущее время / точное время с использованием библиотеки NTP.
 - Программа должна корректно обрабатывать ошибки библиотеки: распечатывать их в STDERR и возвращать ненулевой код выхода.
-
-On Win: ```"c:\Program Files\Git\bin\bash.exe"```
-Then ```GOPATH=`pwd`/gopath; go get; go run hw01.go```
+- On Win: ```"c:\Program Files\Git\bin\bash.exe"```
+- Then ```GOPATH=`pwd`/gopath; go get; go run hw01.go```
