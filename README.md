@@ -6,9 +6,8 @@ Practical part of the Golang OTUS courses:
 
 #### hw01 Start
 - Homework:
-- - Hello now()
-- - Завести Go репозиторий на GitHub, написать программу печатающую текущее время / точное время с использованием библиотеки NTP.
-- - Программа должна корректно обрабатывать ошибки библиотеки: распечатывать их в STDERR и возвращать ненулевой код выхода.
+- - Create program which print current datetime using NTP library.
+- - App should correctly handle NTP library errors: print them to STDERR and return non-zero exit code.
 - On Win: ```"c:\Program Files\Git\bin\bash.exe"```
 - Then ```GOPATH=`pwd`/gopath; go get; go get -t; go test -v hw01_test.go hw01.go``` 'main' function removed to keep files in one dir
 
@@ -44,14 +43,13 @@ Practical part of the Golang OTUS courses:
 - ```https://golang.org/pkg/``` - internal modules
 - ```http://golang-book.ru/``` - Golang book in russian
 - Homework:
-- - Распаковка строки
-- - Создать Go функцию, осуществляющую примитивную распаковку строки, содержащую повторяющиеся символы / руны, например:
-- - 
-- - * "a4bc2d5e" => "aaaabccddddde"
-- - * "abcd" => "abcd"
-- - * "45" => "" (некорректная строка)
-- - 
-- - Дополнительное задание: поддержка escape - последовательности
-- - * `qwe\4\5` => `qwe45` (*)
-- - * `qwe\45` => `qwe44444` (*)
-- - * `qwe\\5` => `qwe\\\\\` (*)
+- - Unpack string
+- - Create Go function, for unpack string, containing repeating symbols / runes, for e.g.:
+- - - "a4bc2d5e" => "aaaabccddddde"
+- - - "abcd" => "abcd"
+- - - "45" => "" (invalid string)
+- - Additional: escape-sequence supoport
+- - - `qwe\4\5` => `qwe45` (*)
+- - - `qwe\45` => `qwe44444` (*)
+
+#### hw04 Slices

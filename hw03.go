@@ -1,6 +1,10 @@
 package hw03
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+	"unicode"
+)
 
 var Storage map[string]string         // zero value
 var storage = make(map[string]string) // auto-type ('var' required outside functions, unable to use ':=' here)
@@ -37,6 +41,45 @@ func itoa(i int) (s string) {
 	return s
 }
 
+func unpackString(in string) (out string) {
+
+	var lastRune rune
+	for _, r := range in {
+		var multiplier int = 1
+
+		//fmt.Printf("%v\n", string(r))
+
+		//get last rune which is not digit and not escape symbol
+		if !unicode.IsDigit(r) || lastRune == '\\' {
+
+			lastRune = r
+
+			if lastRune == '\\' {
+				continue
+			}
+
+		} else {
+			multiplier, _ = strconv.Atoi(string(r))
+			if multiplier > 0 {
+				multiplier--
+			}
+		}
+
+		for i := 0; i < multiplier; i++ {
+			if int(lastRune) != 0 { // rune can't be empty, empty rune is '\x00'
+				out += string(lastRune)
+			}
+		}
+
+			//fmt.Printf("%v %v\n", i, r)
+		// i - 1,2,4,6,9... (by rune len)
+		// r - rune, int32
+	}
+
+	return
+}
+
+// samples to learn
 func hw03() {
 	{
 		var i int = 10
