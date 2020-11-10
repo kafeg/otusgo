@@ -1,4 +1,4 @@
-## OTUS HomeWork practive
+## OTUS HomeWork practice
 
 Practical part of the GoLang OTUS courses:
 - https://otus.ru/lessons/golang-professional/?int_source=courses_catalog&int_term=programming
