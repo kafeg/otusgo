@@ -38,7 +38,7 @@ Practical part of the Golang OTUS courses:
 - - HasPrefix(s, prefix string) bool - like Starts with
 - - Join(a []string, sep string) string
 - - Split(s, sep string) []string
-- - DecodeRuneInString(s string) (r rune, size int) - get first rune from the string and its lingth in bytes
+- - DecodeRuneInString(s string) (r rune, size int) - get first rune from the string and its length in bytes
 - - RuneCountInString(s string) (n int) - get string length in bytes
 - - ValidString(s string) bool - check is string valid
 - ```https://golang.org/pkg/``` - internal modules
