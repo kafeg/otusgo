@@ -1,11 +1,11 @@
-## OTUS HomeWork practice
+## OTUS Golang HomeWork practice
 
-Practical part of the GoLang OTUS courses:
+Practical part of the Golang OTUS courses:
 - https://otus.ru/lessons/golang-professional/?int_source=courses_catalog&int_term=programming
 - https://rutracker.org/forum/viewtopic.php?t=5863412
 
 #### hw01 Start
-- Задание:
+- Homework:
 - - Hello now()
 - - Завести Go репозиторий на GitHub, написать программу печатающую текущее время / точное время с использованием библиотеки NTP.
 - - Программа должна корректно обрабатывать ошибки библиотеки: распечатывать их в STDERR и возвращать ненулевой код выхода.
@@ -13,7 +13,7 @@ Practical part of the GoLang OTUS courses:
 - Then ```GOPATH=`pwd`/gopath; go get; go get -t; go test -v hw01_test.go hw01.go``` 'main' function removed to keep files in one dir
 
 #### hw02 Tools, testing
-- ```GOROOT``` - path to GOlang distributive
+- ```GOROOT``` - path to Golang distributive
 - ```GOPATH``` - path to modules/sources (where go get store everything)
 - ```go get, go get -t, go get -v``` - get modules for app, for tests, verbose to the ```$GOPATH/src```
 - ```go build, go build hw01.go``` - compile source file
@@ -43,7 +43,7 @@ Practical part of the GoLang OTUS courses:
 - - ValidString(s string) bool - check is string valid
 - ```https://golang.org/pkg/``` - internal modules
 - ```http://golang-book.ru/``` - Golang book in russian
-- Задание:
+- Homework:
 - - Распаковка строки
 - - Создать Go функцию, осуществляющую примитивную распаковку строки, содержащую повторяющиеся символы / руны, например:
 - - 
