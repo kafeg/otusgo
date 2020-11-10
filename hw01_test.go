@@ -5,6 +5,10 @@ import (
 	"github.com/stretchr/testify/require" // external testing module (TestCountTestify)
 )
 
+func TestMainHW01(t *testing.T) {
+	hw01()
+}
+
 //simple test case
 func TestGetTime(t *testing.T) {
 

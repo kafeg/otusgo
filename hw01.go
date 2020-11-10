@@ -35,7 +35,7 @@ func Count(s string, r rune) int {
 	return cnt
 }
 
-func main() {
+func hw01() {
 	time1, err := getCurrentTime() // call a function, vars created automatically with required types by the oper :=, similar to 'auto' in C++
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error in NTP library 1: %v\n", err) //print error to stderr channel, '\n' required
