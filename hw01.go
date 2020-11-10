@@ -1,4 +1,4 @@
-package main // package name
+package hw01 // package name
 
 // includes/imports
 import (
@@ -22,6 +22,17 @@ func printCurrentTime(time time.Time) {
 func getCurrentTimeWithMetaData() (response *ntp.Response, err error) {
 	response, err = ntp.Query("0.beevik-ntp.pool.ntp.org") // here return values by names, not pisitional as in 'getCurrentTime'
 	return // return statement is required
+}
+
+// sample func for test case, count runes in the given string
+func Count(s string, r rune) int {
+	var cnt int
+	for _, l := range s {
+		if l == r {
+			cnt += 1
+		}
+	}
+	return cnt
 }
 
 func main() {
