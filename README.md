@@ -6,6 +6,7 @@ Practical part of the Golang OTUS courses:
 
 #### hw01 Start
 - Homework:
+- - Hello now()
 - - Create program which print current datetime using NTP library.
 - - App should correctly handle NTP library errors: print them to STDERR and return non-zero exit code.
 - On Win: ```"c:\Program Files\Git\bin\bash.exe"```
