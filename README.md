@@ -32,3 +32,13 @@ Practical part of the GoLang OTUS courses:
 
 #### hw03 Elementary data types (ints, strings, stdlib for strings)
 - ```go test -v hw03_test.go hw03.go``` 'main' function removed to keep files in one dir
+- ```strings``` module functions:
+- - Contains(s, substr string) bool
+- - HasPrefix(s, prefix string) bool - like Starts with
+- - Join(a []string, sep string) string
+- - Split(s, sep string) []string
+- - DecodeRuneInString(s string) (r rune, size int) - get first rune from the string and its lingth in bytes
+- - RuneCountInString(s string) (n int) - get string length in bytes
+- - ValidString(s string) bool - check is string valid
+- ```https://golang.org/pkg/``` - internal modules
+- ```http://golang-book.ru/``` - Golang book in russian

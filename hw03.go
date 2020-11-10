@@ -85,15 +85,6 @@ func hw03() {
 		var r5 rune = '\u12e4' // unicode code-point
 		fmt.Printf("%v %v %v %v %v\n", r1, r2, r3, r4, r5)
 
-		// get first rune from the string and its lingth in bytes
-		// DecodeRuneInString(s string) (r rune, size int)
-
-		// get string length in bytes
-		// RuneCountInString(s string) (n int)
-
-		// check is string valid
-		// ValidString(s string) bool
-
 		//convert to slice
 		s := "привет"
 		ba := []byte(s)
@@ -119,17 +110,5 @@ func hw03() {
 			// i - 1,2,4,6,9... (by rune len)
 			// r - rune, int32
 		}
-	}
-
-	// string functs
-	{
-		//Contains(s, substr string) bool
-
-		// startsWith ?
-		//HasPrefix(s, prefix string) bool
-
-		//Join(a []string, sep string) string
-		
-		//Split(s, sep string) []string
 	}
 }
