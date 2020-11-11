@@ -1,4 +1,4 @@
-package hw01 // package name
+package main // package name
 
 // includes/imports
 import (

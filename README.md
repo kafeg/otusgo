@@ -53,4 +53,9 @@ Practical part of the Golang OTUS courses:
 - - - `qwe\4\5` => `qwe45` (*)
 - - - `qwe\45` => `qwe44444` (*)
 
-#### hw04 Slices
+#### hw04 Slices, arrays
+- ```go test -v hw04_test.go hw04.go``` 'main' function removed to keep files in one dir
+- Homework:
+- - Frequency analysis
+- - Write a function that receives text as input and returns
+- - 10 most common words without word forms

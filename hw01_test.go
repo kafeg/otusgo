@@ -1,4 +1,4 @@
-package hw01 //the same name with 'hw01.go' package file
+package main //the same name with 'hw01.go' package file
 
 import (
 	"testing" //internal testing module (TestCountNative)

@@ -1,4 +1,4 @@
-package hw03
+package main
 
 import (
 	"fmt"
