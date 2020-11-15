@@ -76,3 +76,22 @@ Practical part of the Golang OTUS courses:
 - - err := errors.New("Im an error")
 - Defer, Panic, Recover
 
+#### hw06 Structures
+- ```go test -v hw06_test.go hw06.go``` 'main' function removed to keep files in one dir
+- Homework:
+- - Двусвязный список
+- - Цель: https://en.wikipedia.org/wiki/Doubly_linked_list?Ожидаемые типы (псевдокод):?
+- - - List // тип контейнер 
+- - - - Len() // длинна списка 
+- - - - First() // первый Item
+- - - - Last() // последний Item 
+- - - - PushFront(v interface{}) // добавить значение в начало 
+- - - - PushBack(v interface{}) // добавить значение в конец 
+- - - - Remove(i Item) // удалить элемент
+- - - Item // элемент списка 
+- - - - Value() interface{} // возвращает значение 
+- - - - Next() *Item // следующий Item 
+- - - - Prev() *Item // предыдущий
+- - Реализовать двусвязанный список на языке Go
+
+

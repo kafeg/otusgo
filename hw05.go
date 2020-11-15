@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"os"
 	"sort"
 	"strconv"
@@ -276,11 +277,21 @@ func hw05() {
 
 	// panic
 	{
-		var user = os.Getenv("USER")
+		rec := func() {
+			defer func() {
+				if err := recover(); err != nil { // catch 'panic'
+					log.Println("failed:", err)
+				}
+			}()
 
-		if user == "" {
-			panic("no value for $USER")
+			var user = os.Getenv("USER")
+
+			if user == "" {
+				panic("no value for $USER")
+			}
 		}
+
+		rec()
 	}
 
 	// recover
