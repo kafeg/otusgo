@@ -59,3 +59,20 @@ Practical part of the Golang OTUS courses:
 - - Frequency analysis
 - - Write a function that receives text as input and returns
 - - 10 most common words without word forms
+
+#### hw05 Functions, Scopes, error handling
+- ```go test -v hw05_test.go hw05.go``` 'main' function removed to keep files in one dir
+- Scopes:
+- - universe block - global scope: bool, int32, int64, float64, …; nil; make(), new(), panic(), …; true or false
+- - package block - full package scope
+- - file block - current file scope
+- - local block - just {}. E.g.: {}, for, if, switch, case, select, ...
+- Functions can be simple, variadic, return multi-values, etc...
+- Closures can be used to simulate local static vars in functions
+- Structs can have a methods, similar to classes
+- Possible to add methods to the basic types using something like 'type Age int'
+- Error handling:
+- - 'error' is an interface with 'Error() string' method
+- - err := errors.New("Im an error")
+- Defer, Panic, Recover
+
