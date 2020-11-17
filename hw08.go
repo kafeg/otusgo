@@ -149,47 +149,5 @@ func doParallelTasks(tasks []func() error, maxParallelCount int, maxErrors int) 
 		}
 	}
 
-	//// run jobs by portions == maxParallelCount
-	//for {
-	//
-	//
-	//
-	//	// run max parallel jobs
-	//	for i := 0; i < maxParallelCount; i++ {
-	//		index := nextJobIndex()
-	//		go func(index int) {
-	//			fmt.Printf("Execute task %v\n", index)
-	//			rsltChan <- tasks[index]() // iterate over i < maxParallelCount, but use nextJobIndex() to fetch next job
-	//		} (index)
-	//	}
-	//
-	//
-	//
-	//}
-	//
-	//for {
-	//	for i := 0; i < maxParallelCount; i++ {
-	//		start <- i
-	//	}
-	//
-	//	res := <-rsltChan //when the buffer will have value we will read here
-	//	executed += maxParallelCount
-	//
-	//	if res != nil {
-	//		maxErrors--
-	//	}
-	//
-	//	fmt.Printf("Errors to exit: %v\n", maxErrors)
-	//
-	//	if maxErrors <= 0 {
-	//		return &ErrorString{"Max errors exceeded"}
-	//	}
-	//
-	//	fmt.Printf("executed: %v %v\n", executed, len(tasks))
-	//	if executed >= len(tasks) {
-	//		return nil
-	//	}
-	//}
-
 	return nil
 }
