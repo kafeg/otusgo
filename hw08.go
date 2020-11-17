@@ -110,7 +110,7 @@ func doParallelTasks(tasks []func() error, maxParallelCount int, maxErrors int) 
 
 			go func(index int) {
 				fmt.Printf("Start task %v\n", index)
-				rsltChan <- tasks[index]() // iterate over i < maxParallelCount, but use nextJobIndex() to fetch next job
+				rsltChan <- tasks[index]()
 				fmt.Printf("Finish task %v\n", index)
 			} (index)
 
