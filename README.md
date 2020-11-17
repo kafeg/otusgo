@@ -10,7 +10,7 @@ Practical part of the Golang OTUS courses:
 - - Create program which print current datetime using NTP library.
 - - App should correctly handle NTP library errors: print them to STDERR and return non-zero exit code.
 - On Win: ```"c:\Program Files\Git\bin\bash.exe"```
-- Then ```GOPATH=`pwd`/gopath; go get; go get -t; go test -v hw01_test.go hw01.go``` 'main' function removed to keep files in one dir
+- Then ```GOPATH=`pwd`/gopath; go get; go get -t; go test -v -run MainHW01``` 'main' function removed to keep files in one dir
 
 #### hw02 Tools, testing
 - ```GOROOT``` - path to Golang distributive
@@ -32,7 +32,7 @@ Practical part of the Golang OTUS courses:
 - ```go test google.golang.org/grpc/...``` - test external module and all its submodules
 
 #### hw03 Elementary data types (ints, strings, stdlib for strings)
-- ```go test -v hw03_test.go hw03.go``` 'main' function removed to keep files in one dir
+- ```go test -v -run MainHW03``` 'main' function removed to keep files in one dir
 - ```strings``` module functions:
 - - Contains(s, substr string) bool
 - - HasPrefix(s, prefix string) bool - like Starts with
@@ -54,14 +54,14 @@ Practical part of the Golang OTUS courses:
 - - - `qwe\45` => `qwe44444` (*)
 
 #### hw04 Slices, arrays
-- ```go test -v hw04_test.go hw04.go``` 'main' function removed to keep files in one dir
+- ```go test -v -run MainHW04``` 'main' function removed to keep files in one dir
 - Homework:
 - - Frequency analysis
 - - Write a function that receives text as input and returns
 - - 10 most common words without word forms
 
 #### hw05 Functions, Scopes, error handling
-- ```go test -v hw05_test.go hw05.go``` 'main' function removed to keep files in one dir
+- ```go test -v -run MainHW05``` 'main' function removed to keep files in one dir
 - Scopes:
 - - universe block - global scope: bool, int32, int64, float64, …; nil; make(), new(), panic(), …; true or false
 - - package block - full package scope
@@ -77,7 +77,7 @@ Practical part of the Golang OTUS courses:
 - Defer, Panic, Recover
 
 #### hw06 Structures
-- ```go test -v hw06_test.go hw06.go``` 'main' function removed to keep files in one dir
+- ```go test -v -run MainHW06``` 'main' function removed to keep files in one dir
 - Homework:
 - - Двусвязный список
 - - Цель: https://en.wikipedia.org/wiki/Doubly_linked_list?Ожидаемые типы (псевдокод):?
@@ -94,4 +94,17 @@ Practical part of the Golang OTUS courses:
 - - - - Prev() *Item // предыдущий
 - - Реализовать двусвязанный список на языке Go
 
+#### hw07 Interfaces
+- ```go test -v -run MainHW07``` 'main' function removed to keep files in one dir
+- Interfaces could be realized implicity
+- One type could realize many interfaces
+- One interface could be realized by the many types
+- Interface - the set of the methods, which need to implement to satisfy interface
+- 'interface{}' - empty interface, something like void*
 
+#### hw08 Goroutines and channels
+- ```go test -v -run MainHW08``` 'main' function removed to keep files in one dir
+- Goroutine - light thread, for one task for e.g.
+- go f() - call goroutine
+- Channels - used to exchange data between Goroutins and to sync their execution
+- Channels can be unbuffered and buffered (store some values, cap() and len() present)
