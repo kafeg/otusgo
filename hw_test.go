@@ -266,3 +266,10 @@ func TestDoParallelTasks(t *testing.T) {
 		t.Fatalf("Err in parallel jobs: %v", err)
 	}
 }
+
+
+// --- hw09
+func TestMainHW09(t *testing.T) {
+	fmt.Printf("--- Tests for hw09 ---\n")
+	hw09()
+}

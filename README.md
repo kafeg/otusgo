@@ -108,3 +108,14 @@ Practical part of the Golang OTUS courses:
 - go f() - call goroutine
 - Channels - used to exchange data between Goroutins and to sync their execution
 - Channels can be unbuffered and buffered (store some values, cap() and len() present)
+
+#### hw09 Synchronization primitives
+- ```go test -v -run MainHW09``` 'main' function removed to keep files in one dir
+- sync.WaitGroup - instrument to wait more than one Goroutine to finish. WaitGroup: Add, Done, Wait
+- sync.Mutex - standard mutex with Lock, Unlock functions
+- sync.RWMutex - RLock, RUnlock - block only on read, Lock, Unlock - block for r/w
+- sync.Map - special Map with included sync.RWMutex for high load usage
+- sync.Pool - storage for the data safety to use by some goroutines. Any element in the pool can be force deleted in random time by the Garbage Collector
+- sync.Once - do something only once
+- sync.Cond - goroutines will wait for event
+- Golang contains Race detector ``` go test -race ...```
